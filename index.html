@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asbin Ghimire | Backend Developer & System Architect</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Portfolio of Asbin Ghimire, a Backend Developer & System Architect specializing in scalable systems, secure APIs, and modern digital experiences.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Boxicons for elegant icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Global HUD Overlays -->
+    <div class="noise-overlay"></div>
+    <div class="viewport-frame">
+        <div class="frame-corner tl"></div>
+        <div class="frame-corner tr"></div>
+        <div class="frame-corner bl"></div>
+        <div class="frame-corner br"></div>
+    </div>
+    <div class="custom-cursor">
+        <div class="cursor-point"></div>
+        <div class="cursor-targeter">
+            <div class="bracket tl"></div>
+            <div class="bracket tr"></div>
+            <div class="bracket bl"></div>
+            <div class="bracket br"></div>
+        </div>
+        <div class="cursor-radar">
+            <div class="radar-arc"></div>
+        </div>
+    </div>
+    <div class="scanlines"></div>
+    
+    <!-- Ambient Background Effects -->
+    <div class="hex-grid"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    
+    <!-- Atmospheric Tech Decals -->
+    <div class="tech-decal decal-1">SYS_COORD // 27.7172N 85.3240E</div>
+    <div class="tech-decal decal-2">DATA_STREAM_ACTIVE // v1.0.9</div>
+    <div class="tech-decal decal-3">SEC_PROTOCOL_HUD_LNK</div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Section Indicator (Side HUD) -->
+    <div class="side-hud">
+        <div class="hud-line"></div>
+        <div class="hud-labels">
+            <span class="active">01 HERO</span>
+            <span>02 EXP</span>
+            <span>03 SKILLS</span>
+            <span>04 CONNECTIONS</span>
+        </div>
+    </div>
+    
+    <!-- Premium Lighting Element (Command Center Spotlight) -->
+    <div class="pendant-lamp">
+        <div class="lamp-wire"></div>
+        <div class="lamp-housing">
+            <div class="lamp-head">
+                <div class="lamp-eye"></div>
+                <div class="hud-ring"></div>
+            </div>
+        </div>
+        <div class="lamp-beam-container">
+            <div class="lamp-beam"></div>
+            <div class="lamp-beam-core"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <a href="#" class="logo magnetic">
+                <!-- Replace 'logo.png' with the exact name of your file if it's different -->
+                <img src="img/LOGO.png" alt="Asbin Ghimire" class="nav-logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="magnetic">About</a>
+                <a href="#experience" class="magnetic">Experience</a>
+                <a href="#contact" class="btn-primary-sm magnetic">Let's Talk</a>
+            </div>
+            <div class="nav-status-minimal">
+                <span class="status-dot blink"></span>
+                <span class="status-text">SYSTEM_READY</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="status-dot blink"></span> System Online
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Asbin Ghimire</span><br>
+                    Backend Developer
+                </h1>
+                <p class="hero-subtitle">
+                    Building scalable systems, secure APIs, and modern digital experiences with <span class="highlight">precision</span>.
+                </p>
+                <div class="hero-cta">
+                    <a href="#experience" class="btn-primary magnetic">View Projects</a>
+                    <a href="#contact" class="btn-outline magnetic">Contact Me</a>
+                </div>
+                <div class="nav-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">SYS_ONLINE</span>
+                </div>
+                
+                <!-- Hero System Specs -->
+                <div class="hero-specs">
+                    <div class="spec-item"><span class="label">OS_V</span> <span class="value">NEURAL_OS_v4.2</span></div>
+                    <div class="spec-item"><span class="label">LOC_STAT</span> <span class="value">KTM_NP_27.7°N</span></div>
+                    <div class="spec-item"><span class="label">SEC_BIT</span> <span class="value">ENCRYPTED_AES256</span></div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="terminal glass-panel">
+                    <div class="terminal-header">
+                        <div class="mac-btns">
+                            <span class="close"></span>
+                            <span class="minimize"></span>
+                            <span class="maximize"></span>
+                        </div>
+                        <div class="terminal-title">asbin@server: ~/infrastructure</div>
+                        <div class="terminal-live-badge"><span class="pulse-dot-red"></span> LIVE_DEPLOYMENT</div>
+                    </div>
+                    <div class="terminal-body code-font">
+                        <div class="typed-text-container">
+                            <span class="prompt">asbin@server:~$</span> <span id="typed-text"></span><span class="cursor">_</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Floating Elements -->
+                <div class="float-icon node-icon glass-panel"><i class='bx bxl-nodejs'></i></div>
+                <div class="float-icon python-icon glass-panel"><i class='bx bxl-python'></i></div>
+                <div class="float-icon db-icon glass-panel"><i class='bx bx-data'></i></div>
+            </div>
+        </section>
+
+        <!-- Live Server Logs Section -->
+        <section id="live-logs" class="live-logs container">
+            <div class="hud-border">
+                <div class="hud-corner top-left"></div>
+                <div class="hud-corner top-right"></div>
+                <div class="hud-corner bottom-left"></div>
+                <div class="hud-corner bottom-right"></div>
+                
+                <div class="log-header">
+                    <span class="status-dot blink"></span> LIVE DEPLOYMENT STREAM <span class="log-uptime">UPTIME: 99.99%</span>
+                </div>
+                <div class="log-window code-font" id="log-window">
+                    <!-- Logs will be streamed here via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about container">
+            <h2 class="section-title"><span class="gradient-text">About</span> Me</h2>
+            <div class="about-content">
+                <div class="about-text glass-panel">
+                    <p>
+                        I am a backend-focused developer passionate about designing and building <span class="highlight">scalable applications, robust database systems, API architecture,</span> and <span class="highlight">modern cloud infrastructure</span>.
+                    </p>
+                    <p>
+                        With a strong foundation in server-side technologies, I specialize in creating seamless, high-performance backends that power modern web applications. My approach involves writing clean, maintainable code while ensuring optimal security and performance.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">React</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">Authentication Systems</span>
+                        <span class="tag">Cloud Deployment</span>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="server-rack glass-panel">
+                        <div class="rack-unit">
+                            <span class="rack-light blink"></span>
+                            <div class="rack-lines"></div>
+                        </div>
+                        <div class="rack-unit">
+                            <span class="rack-light blink" style="animation-delay: 0.5s;"></span>
+                            <div class="rack-lines"></div>
+                        </div>
+                        <div class="rack-unit">
+                            <span class="rack-light blink" style="animation-delay: 1.2s;"></span>
+                            <div class="rack-lines"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience container" data-number="01">
+            <div class="section-header">
+                <h2 class="section-title"><span class="gradient-text">Experience</span></h2>
+                <div class="exp-nav">
+                    <button class="nav-btn prev-btn magnetic" aria-label="Previous Project"><i class='bx bx-chevron-left'></i></button>
+                    <button class="nav-btn next-btn magnetic" aria-label="Next Project"><i class='bx bx-chevron-right'></i></button>
+                </div>
+            </div>
+            <div class="experience-grid">
+                
+                <!-- 1. IT Officer (Current) -->
+                <div class="experience-card glass-panel">
+                    <div class="exp-content">
+                        <div class="hud-status success">[● Currently Working]</div>
+                        <h3>IT Officer</h3>
+                        <h4><a href="https://bhrikutihospital.com/" target="_blank" class="magnetic link-hover" style="color: inherit; text-decoration: none;">Bhrikuti Hospital Pvt. Ltd. <i class='bx bx-link-external'></i></a></h4>
+                        <p class="exp-desc">Serving as an IT Officer, managing hospital systems, technical support, and staff training while overseeing HospitalCare and Luniva360 to ensure smooth and efficient digital operations.</p>
+                        <div class="exp-tech">
+                            <i class='bx bxl-django'></i> <i class='bx bx-shield-quarter'></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Pathivara -->
+                <div class="experience-card glass-panel">
+                    <div class="exp-content">
+                        <div class="hud-status success">[● Production Ready]</div>
+                        <h3>Backend Developer</h3>
+                        <h4><a href="https://pathibharaenterprises.com.np/" target="_blank" class="magnetic link-hover" style="color: inherit; text-decoration: none;">Pathivara Enterprises Website <i class='bx bx-link-external'></i></a></h4>
+                        <p class="exp-desc">Engineered a robust e-commerce backend platform, featuring secure payment gateways, dynamic product inventory management, and high-performance database querying.</p>
+                        <div class="exp-tech">
+                            <i class='bx bxl-django'></i> <i class='bx bxl-postgresql'></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. AccountEase -->
+                <div class="experience-card glass-panel">
+                    <div class="exp-content">
+                        <div class="hud-status warning">[● Optimized Backend]</div>
+                        <h3>Developer</h3>
+                        <h4>"AccountEase" Accounting Software</h4>
+                        <p class="exp-desc">Developed a comprehensive accounting REST API with complex financial reporting, automated data synchronization, and secure multi-tenant architecture.</p>
+                        <div class="exp-tech">
+                            <i class='bx bxl-django'></i> <i class='bx bxl-nodejs'></i> <i class='bx bxl-postgresql'></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. SNP Clinic -->
+                <div class="experience-card glass-panel">
+                    <div class="exp-content">
+                        <div class="hud-status info">[● Secure API]</div>
+                        <h3>Backend Developer</h3>
+                        <h4><a href="https://www.snpclinic.com.np/" target="_blank" class="magnetic link-hover" style="color: inherit; text-decoration: none;">SNP Clinic Website <i class='bx bx-link-external'></i></a></h4>
+                        <p class="exp-desc">Architected a reliable backend system for healthcare appointment scheduling, patient record management, and secure data handling compliant with medical standards.</p>
+                        <div class="exp-tech">
+                            <i class='bx bxl-django'></i> <i class='bx bxl-postgresql'></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. InfivityLabs -->
+                <div class="experience-card glass-panel">
+                    <div class="exp-content">
+                        <div class="hud-status cloud">[● Cloud Hosted]</div>
+                        <h3>Contributor</h3>
+                        <h4><a href="https://infivitylabs.com/" target="_blank" class="magnetic link-hover" style="color: inherit; text-decoration: none;">InfivityLabs Official Website <i class='bx bx-link-external'></i></a></h4>
+                        <p class="exp-desc">Contributed to the core infrastructure and cloud deployment pipelines, optimizing server response times and ensuring high availability for corporate clientele.</p>
+                        <div class="exp-tech">
+                            <i class='bx bxl-django'></i> <i class='bx bx-cloud'></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- Technical Arsenal (Skills) Section -->
+        <section id="skills" class="skills container" data-number="02">
+            <div class="skills-header">
+                <h2 class="section-title"><span class="gradient-text">Technical</span> Arsenal</h2>
+                <div class="system-readout">DATA_STREAM: STABLE // ARCH_V4.2</div>
+            </div>
+            
+            <div class="skills-grid-new">
+                <!-- DevOps Chips (Moved to Front) -->
+                <div class="skill-chip glass-panel magnetic">
+                    <div class="chip-icon"><i class='bx bxl-github'></i></div>
+                    <div class="chip-info">
+                        <span class="chip-name">Git & GitHub</span>
+                        <span class="chip-tag">VERSION_CTL</span>
+                    </div>
+                </div>
+
+                <!-- Backend Chips -->
+                <div class="skill-chip glass-panel magnetic">
+                    <div class="chip-icon"><i class='bx bxl-django'></i></div>
+                    <div class="chip-info">
+                        <span class="chip-name">Django</span>
+                        <span class="chip-tag">BACKEND_MOD</span>
+                    </div>
+                </div>
+                <div class="skill-chip glass-panel magnetic">
+                    <div class="chip-icon"><i class='bx bxl-python'></i></div>
+                    <div class="chip-info">
+                        <span class="chip-name">Python</span>
+                        <span class="chip-tag">CORE_LANG</span>
+                    </div>
+                </div>
+                <div class="skill-chip glass-panel magnetic">
+                    <div class="chip-icon"><i class='bx bxl-nodejs'></i></div>
+                    <div class="chip-info">
+                        <span class="chip-name">Node.js</span>
+                        <span class="chip-tag">RUNTIME</span>
+                    </div>
+                </div>
+                <div class="skill-chip glass-panel magnetic">
+                    <div class="chip-icon"><i class='bx bxl-microsoft'></i></div>
+                    <div class="chip-info">
+                        <span class="chip-name">.NET</span>
+                        <span class="chip-tag">ENTERPRISE</span>
+                    </div>
+                </div>
+                <div class="skill-chip glass-panel magnetic">
+                    <div class="chip-icon"><i class='bx bxl-postgresql'></i></div>
+                    <div class="chip-info">
+                        <span class="chip-name">PostgreSQL</span>
+                        <span class="chip-tag">DATABASE</span>
+                    </div>
+                </div>
+                <div class="skill-chip glass-panel magnetic">
+                    <div class="chip-icon"><i class='bx bxs-data'></i></div>
+                    <div class="chip-info">
+                        <span class="chip-name">MySQL</span>
+                        <span class="chip-tag">DATABASE</span>
+                    </div>
+                </div>
+
+                <!-- Frontend Chips -->
+                <div class="skill-chip glass-panel magnetic">
+                    <div class="chip-icon"><i class='bx bxl-javascript'></i></div>
+                    <div class="chip-info">
+                        <span class="chip-name">JavaScript</span>
+                        <span class="chip-tag">LOGIC_UI</span>
+                    </div>
+                </div>
+                <div class="skill-chip glass-panel magnetic">
+                    <div class="chip-icon"><i class='bx bxl-html5'></i></div>
+                    <div class="chip-info">
+                        <span class="chip-name">HTML5 / CSS3</span>
+                        <span class="chip-tag">STRUCTURE</span>
+                    </div>
+                </div>
+                <div class="skill-chip glass-panel magnetic">
+                    <div class="chip-icon"><i class='bx bx-shape-polygon'></i></div>
+                    <div class="chip-info">
+                        <span class="chip-name">GSAP</span>
+                        <span class="chip-tag">MOTION</span>
+                    </div>
+                </div>
+
+                <!-- DevOps Chips -->
+                <div class="skill-chip glass-panel magnetic">
+                    <div class="chip-icon"><i class='bx bxl-aws'></i></div>
+                    <div class="chip-info">
+                        <span class="chip-name">AWS</span>
+                        <span class="chip-tag">INFRA</span>
+                    </div>
+                </div>
+                <div class="skill-chip glass-panel magnetic">
+                    <div class="chip-icon"><i class='bx bx-terminal'></i></div>
+                    <div class="chip-info">
+                        <span class="chip-name">Linux</span>
+                        <span class="chip-tag">KERNEL_OPS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-container container">
+            <h2 class="section-title"><span class="gradient-text">Initialize </span> Connections</h2>
+            <!-- Tactical Comm Tablet -->
+            <div class="comm-tablet glass-panel">
+                <div class="tablet-scanline"></div>
+                
+                <!-- Tactical Frame Corners -->
+                <div class="tablet-corner top-l"></div>
+                <div class="tablet-corner top-r"></div>
+                <div class="tablet-corner bot-l"></div>
+                <div class="tablet-corner bot-r"></div>
+
+                <div class="tablet-header">
+                    <div class="header-left">
+                        <div class="auth-box">
+                            <span class="auth-label">USER_AUTH</span>
+                            <span class="auth-status">VERIFIED <i class='bx bxs-check-shield'></i></span>
+                        </div>
+                    </div>
+                    <div class="header-center">
+                        <div class="comm-freq">FREQ: 2.48GHz // CH_04 // <span class="blink">LATENCY: 12ms</span></div>
+                    </div>
+                    <div class="header-right">
+                        <div class="signal-strength">
+                            <span class="sig-bar active"></span>
+                            <span class="sig-bar active"></span>
+                            <span class="sig-bar active"></span>
+                            <span class="sig-bar"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tablet-main">
+                    <div class="comm-list">
+                        <a href="mailto:ghimireasbin12@gmail.com" class="tablet-link magnetic">
+                            <div class="link-id">01</div>
+                            <div class="link-label">SECURE_EMAIL</div>
+                            <div class="link-val">ghimireasbin12@gmail.com</div>
+                            <div class="link-status active">[ ONLINE ]</div>
+                        </a>
+                        <a href="https://github.com/AsbinGhimire" target="_blank" class="tablet-link magnetic">
+                            <div class="link-id">02</div>
+                            <div class="link-label">GITHUB_ACCESS</div>
+                            <div class="link-val">github.com/AsbinGhimire</div>
+                            <div class="link-status active">[ READY ]</div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/asbin-ghimire-931832274?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" class="tablet-link magnetic">
+                            <div class="link-id">03</div>
+                            <div class="link-label">LINKEDIN_PROF</div>
+                            <div class="link-val">linkedin.com/in/asbin-ghimire</div>
+                            <div class="link-status active">[ ACTIVE ]</div>
+                        </a>
+                        <div class="tablet-link magnetic">
+                            <div class="link-id">04</div>
+                            <div class="link-label">GEO_COORD</div>
+                            <div class="link-val">NEPAL / 27.7°N 85.3°E</div>
+                            <div class="link-status">[ LOCKED ]</div>
+                        </div>
+                    </div>
+                    
+                    <div class="tablet-sidebar">
+                        <div class="radar-visual">
+                            <div class="radar-circle"></div>
+                            <div class="radar-sweep"></div>
+                            <div class="radar-point" style="top: 30%; left: 40%;"></div>
+                            <div class="radar-point" style="top: 60%; left: 70%;"></div>
+                        </div>
+                        
+                        <div class="biometric-box">
+                            <div class="fingerprint-scan">
+                                <i class='bx bx-fingerprint'></i>
+                                <div class="scan-line"></div>
+                            </div>
+                            <span>ESTABLISH_UPLINK</span>
+                        </div>
+                        
+                        <div class="system-logs">
+                            <p>> ENCRYPTION: AES_256</p>
+                            <p>> PROTOCOL: SEC_V4.2</p>
+                            <p>> UPLINK: STANDBY</p>
+                            <p>> LOC: KTM_SRV_01</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tablet-footer">
+                    <div class="footer-code">COMM_CHN_STABLE // NO_INTERFERENCE_DETECTED // <span class="time-now">13:52:10</span></div>
+                </div>
+            </div>
+
+            <!-- Motivational Signature (Quote) -->
+            <div class="footer-quote container">
+                <div class="quote-content">
+                    <p class="quote-text-small">"Every great developer you know got there by solving problems they were unqualified to solve until they actually did it."</p>
+                    <span class="quote-author-small">// Patrick McKenzie</span>
+                </div>
+            </div>
+
+            <!-- Footer Connection Logs -->
+            <div class="footer-logs">
+                <p class="log-entry">> ESTABLISHING GOOD_CONNECTIONS...</p>
+                <p class="log-entry">> HANDSHAKE SUCCESSFUL</p>
+                <p class="log-entry">> SESSION_ENCRYPTED_AES256</p>
+                <p class="log-entry">> READY_FOR_UPLINK...<span class="blink">_</span></p>
+            </div>
+        
+        <div class="footer-bottom">
+            <div class="glowing-line"></div>
+            <p class="code-font">Engineered with precision by Asbin Ghimire. <span class="blink">_</span></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Lenis for smooth scrolling -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
